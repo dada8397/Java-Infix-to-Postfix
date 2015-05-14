@@ -31,7 +31,7 @@ public class F74022028_hw6 {
 				case "-":
 				case "*":
 				case "/":
-					if (ope(splited[i + 1]) || ope(splited[i + 1])) {
+					if (ope(splited[i - 1]) || ope(splited[i + 1])) {
 						System.out.println("Invalid expression");
 						System.out.println("Invalid expression");
 						return;
@@ -162,6 +162,7 @@ public class F74022028_hw6 {
 		case "-":
 			return 6;
 		case "*":
+		case "/":
 			return 5;
 		case "(":
 			return 100;
